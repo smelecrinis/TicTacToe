@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body> 
+    <h1>Tic Tac Toe</h1>
+    <div class="top-board-container">
+        <div>
+            <img class="x-icon" src="./img/x-mark.svg">
+            <img class="circle-icon" src="img/circle-dot-solid.svg">
+        </div>    
+        <div class="current-status" id="currentStatus">
+            <img class="turn-icon" src="./img/x-mark.svg" alt="" id="currentImg">
+            <p>turn</p>
+        </div>
+        <div>
+            <button class="restart" id="restartButton"><img src="/img/rotate-right-solid.svg"></button>
+        </div>
+    </div>
+    <div class="board" id="board">     
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="score">
+        <div class="x-score">
+            <p>X (Player 1)</p>
+            <p class="counter" id="xCounter">0</p>
+        </div>
+        <div class="draw-score">
+            <p>Draws</p>
+            <p class="counter" id="drawCounter">0</p>
+        </div>
+        <div class="circle-score">
+            <p>O (Player 2)</p>
+            <p class="counter" id="circleCounter">0</p>
+        </div>
+    </div>
+    <div class="winning-message-overlay" id="winningMessage">
+        <div class="winning-message">
+            <p class="won">You won!</p>
+            <div class="winning-text" data-winning-message-text>
+                <p></p>
+            </div>
+            <div class="btn-container">
+                <button class="quit" id="quit">Quit</button>
+                <button class="next" id="next">Next Round</button>
+            </div>
+        </div>
+    </div>    
+</body>
+
+</html>
